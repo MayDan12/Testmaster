@@ -1,29 +1,18 @@
 // import {  useReducer } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Testform from "./pages/Testform";
 import Test from "./pages/Test";
+import Register from "./pages/Register";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <nav className="container mb-7">
-        <ul className="text-xl flex gap-5 justify-center">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/test">Test</Link>
-          </li>
-          <li>
-            <Link to="/create-test">Create Test</Link>
-          </li>
-        </ul>
-      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/create-test" element={<Testform />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
