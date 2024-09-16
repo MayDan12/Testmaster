@@ -9,7 +9,7 @@ const navigation = [
   { name: "Home", href: "/" },
   // { name: "Dashboard", href: "/dashboard" },
   { name: "Create Test", href: "/create-test", current: true },
-  { name: "Test", href: "/testimg" },
+  { name: "Test", href: "/test" },
 ];
 
 function classNames(...classes) {
