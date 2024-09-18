@@ -43,7 +43,7 @@ function Testform() {
     const { data, error } = await supabase
       .from("questions")
       .insert([questionData]);
-
+    console.log(data);
     if (error) {
       setFormError(error.message);
     } else {
