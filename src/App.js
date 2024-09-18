@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Testform from "./pages/Testform";
 import Test from "./pages/Test";
-import Register from "./pages/Register";
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/test" element={<Test />} />
         <Route path="/create-test" element={<Testform />} />
-        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
