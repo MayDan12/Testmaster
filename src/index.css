@@ -247,3 +247,7 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+.luck {
+  color: var(--color-theme);
+}
